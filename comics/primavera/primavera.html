@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/comics/slides_styles.css">
+    <title>Una despedida de invierno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body style="background-color: #437FCC;">
+        <div class="reading-progressbar" max="100" value="0">
+        </div>
+        <div class="blog-text">
+            <article>
+                    <div class="container">
+                      <audio id="miAudioPlayer" controls src="/comics/invierno/audio/love_virus.mp3" style="width:100%" loop></audio>
+                      <div class="mySlides">
+                        <img src="/comics/primavera/images/01-web.jpg" style="width:100%">
+                        <div class="caption-container">01 / 64</div>
+                      </div>
+                    
+                      <div class="mySlides">
+                        <img src="/comics/primavera/images/02-03.jpeg" style="width:50%">
+                        <div class="caption-container">02-03 / 64</div>
+                      </div>
+
+                      <div class="mySlides">
+                        <video width="640" height="360" controls>
+                          <source src="/comics/primavera/audio/primavera.mp4" type="video/mp4">
+                          <p>test</p>
+                        </video>
+                      </div>
+
+            </article>
+          <div style="display:grid; grid-template-rows: 100px; grid-template-columns:1fr 1fr">
+            <a class="prev" onclick="plusSlides(-1)"style="float: left">❮</a>
+            <a class="next" onclick="plusSlides(1)" style="float: right">❯</a>
+          </div>
+          <a href="/index.html" style="align-items: center; justify-self:center; color:#437FCC; "><h1>Inicio</h1>              
+    </div>  
+    <script src="/comics/slides.js"></script>
+</div>
+</body>
+</html>

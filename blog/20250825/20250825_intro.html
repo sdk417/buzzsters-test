@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/blog/20250825/slides_styles.css">
+    <title>eureka417・Introducción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body style="background-color: #437FCC;">
+        <div class="reading-progressbar" max="100" value="0">
+        </div>
+        <div class="blog-text">
+            <article>
+                <h1>Una introducción a este blog</h1>
+                <br>
+                <p style="border: 2px solid #437FCC; border-style: dashed; padding: 5px"><b>tl;dr</b> Quería montar una página donde poder 
+                  subir mis cómics y practicar lo poco que he aprendido de diseño web.
+                  <br>A su vez, se me ocurrió crear un blog para escribir, de vez en cuando, sobre temas 
+                  que me interesan.</p><br>
+
+                <p>Hace poco estuve jugando a <i>Fuuraiki</i>, 
+                    un juego de PS1/PS2 publicado en 2001 en el que nuestro protagonista 
+                    recorre Hokkaido en moto con el fin 
+                    de preparar un reportaje fotográfico sobre acampar al aire libre.</p><br>
+                <p>Cada noche, monta su tienda de campaña, 
+                    saca el portátil y escribe en su blog 
+                    un artículo sobre los lugares que ha visitado ese día, 
+                    contando sus anécdotas y compartiendo las fotos que ha tomado. </p><br>
+                    <p>A continuación adjunto algunas fotos del juego para que entendáis el rollo que tiene.</p><br>
+
+                    <h2 style="text-align:center">Un breve vistazo a Fuuraiki</h2>
+
+                    <div class="container">
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="images/fuuraiki_01.png" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="images/fuuraiki_02.png" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="images/fuuraiki_03.png" style="width:100%">
+                      </div>
+                        
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 9</div>
+                        <img src="images/fuuraiki_04.png" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="images/fuuraiki_05.png" style="width:100%">
+                      </div>
+                        
+                      <div class="mySlides">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="images/fuuraiki_06.png" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="images/fuuraiki_07.png" style="width:100%">
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="images/fuuraiki_08.png" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="images/fuuraiki_09.png" style="width:100%">
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    
+                      <div class="row">
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_01.png" style="width:100%" onclick="currentSlide(1)" alt="Pantalla de inicio.">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_02.png" style="width:100%" onclick="currentSlide(2)" alt="Los viajes en moto son una colección de fotografías de la carretera y vas seleccionando por cuál camino deseas ir.">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_03.png" style="width:100%" onclick="currentSlide(3)" alt="Sección de novela con una de las protagonistas.">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_04.png" style="width:100%" onclick="currentSlide(4)" alt="Nuestro protagonista encendiéndose una fogata al aire libre.">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_05.png" style="width:100%" onclick="currentSlide(5)" alt="Al caer la noche, montamos la tienda de campaña y podemos tanto escribir un artículo como leer nuestro correo.">
+                        </div>    
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_06.png" style="width:100%" onclick="currentSlide(6)" alt="Nuestro sitio web.">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_07.png" style="width:100%" onclick="currentSlide(7)" alt="Artículo que se va escribiendo automáticamente dependiendo de las anécdotas que deseas contar.">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_08.png" style="width:100%" onclick="currentSlide(8)" alt="Selección de las fotografías que has hecho hoy y que puedes adjuntar con el artículo.">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="images/fuuraiki_09.png" style="width:100%" onclick="currentSlide(9)" alt="El artículo de hoy una vez acabado.">
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                <p>Mientras lo jugaba, 
+                    me dio que pensar sobre cómo internet ha cambiado en estos últimos años
+                    y cómo este tipo de mini diarios se ha transformado en "contenido" para YouTube, Instagram... 
+                    </p><br>
+                <p>Sentí cierta añoranza por este tipo de formato tan "libre" y quería probarlo con mi propio estilo.
+                </p>
+                <br>
+
+                <p>A veces se me ocurre hacer hilos de tweets sobre un tema concreto, pero al final los dejo
+                  cogiendo polvo en borradores...</p><br>
+                
+                <p>De ahí nace el propósito de este blog:
+                  Extenderme sobre temas que me apasionan y que me gustaría comentar.</p><br>
+
+                <!--<img src="/background_v3.gif" style="width: 100%;"><br><br>-->
+                <br>
+                <p>Quiero que sea también el lugar 
+                    donde se puedan leer mis <b>cómics</b> y escuchar la <b>música</b> que compongo para ellos.<br>
+                    (Esta es una sección en la que estoy trabajando 
+                    que hasta dentro de unos meses no verá mucho movimiento.)</p><br>
+                <br>
+                <p>Por último, 
+                    también quiero usar esta web como ejercicio de desarrollo web.<br><br> 
+                    Hace unos meses retomé <a href="https://www.theodinproject.com">The Odin Project</a>, 
+                    un currículum online gratuito que te enseña 
+                    cómo diseñar páginas web desde cero.<br>
+                    Quería aplicar varias de las cosas 
+                    que había aprendido en un proyecto interesante para mí.</p><br>
+                
+                <p>Espero que os parezca interesante lo que vaya escribiendo por aquí. 
+                   Planeo escribir algo al menos una vez al mes.</p><br>
+                    
+                <p>Un saludín,</p>
+                <p>eureka417.</p>
+                <br>
+                <img src="images/admin.gif" style="width: 20%;">
+            </article>
+
+                  <a href="/blog-index.html" style="align-items: center; justify-self:center; color:#437FCC; "><h1>Volver a Blog</h1></a>
+                  <a href="/index.html" style="align-items: center; justify-self:center; color:#437FCC; "><h1>Inicio</h1>
+                </div>
+    </div>  
+    <script src="slides.js"></script>
+</div>
+</body>
+</html>
+
+            <!--<p style="text-align: left;">
+            <img src="bg_responsive2.gif" style="float: right; width: 30%; border: solid 1px #437FCC;">A veces hay que probar cosas nuevas.<br>
+            ¿Estás cansado de las redes sociales <br>y el desplazamiento infinito?<br>
+            Ya somos dos en ese caso.<br></p>
+            <br><img src="test.png" style="width: 100%;">
+            
+            <p style="text-align: center;">A veces hay que probar cosas nuevas. <br>¿Estás cansado de las redes sociales <br>y el desplazamiento infinito?
+            <br>Ya somos dos en ese caso.<br>
+            <video width="640" height="480" controls>
+                <source src="test.mp4" type="video/mp4">
+                
+              Your browser does not support the video tag.
+              </video>
+            
+        </p>-->

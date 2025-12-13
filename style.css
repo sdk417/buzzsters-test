@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    display: grid;
+    justify-content: center;
+    /*background: url("sea_pattern.jpg")*/
+}
+
+#text {
+    margin-bottom: 5px;
+}
+#container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 10fr 4fr 1fr;
+    /*background-color: #437FCC;*/
+    gap: 20px;
+    max-width: 100%;
+    max-height: 65%;
+}
+
+#blog-container {
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: grid;
+}
+
+#blog-index {
+    
+    font-family: "Roboto Flex", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 148px;
+
+}
+
+.blog-picture {
+    border: solid 2px  #437FCC;
+    grid-column: 1 / 2;
+    border-radius: 5px;
+}
+
+.blog-element {
+    margin-left: 5px;
+    border: solid 2px  #437FCC;
+    grid-column: 2 / 3;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.blog-text {
+    
+    font-size: 2vw;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: grid;
+}
+
+h1 {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin: 0px;
+}
+
+p {
+    font-family: "Roboto Flex", sans-serif;
+    margin: 0px;
+}
+
+#banner {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    display: grid;
+    font-size: 2em;
+    /*border: 5px solid white;*/
+    border-radius: 20px;
+    background-color: #4094FF;
+}
+
+
+#sidebar {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.5em;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #64A8FF;
+    border-radius: 20px;
+    
+    justify-content: center;
+    align-content: space-around;
+    padding: 20px;
+    padding-top: 50px;
+    
+    display: grid;
+    list-style-type: none;
+    color: white;
+    
+}
+
+#sidebar > li {
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+#main {
+    font-family: "Roboto Flex", sans-serif;
+    padding: 50px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-radius: 20px;
+    background: no-repeat url("index-bg/background_v3.gif");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#news {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 1em;
+    align-items: start;
+    border-radius: 20px;
+    background-color: #4094FF;
+    font-family: "Roboto Flex", sans-serif;
+    /*background-color: rgb(108, 148, 201);*/
+}
+
+#footer {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#footer > p {
+    margin-bottom: 5px;
+}
+
+@media screen and (width <= 1400px) {
+    #container {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 100px 800px 300px;
+    }
+    
+    #banner {
+        justify-content: center;
+        align-self: center;
+        font-size: 2em;
+        grid-column: 1 / 3;
+
+    }
+    #sidebar {
+        grid-row: 2 / 3;
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+    
+    #main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background: no-repeat url("index-bg/bg_responsive_v4.gif");
+        background-size: 110%;
+        background-position: bottom;
+        border-radius: 20px; 
+    }
+    #footer {
+        grid-column: 1 / 2;
+    }
+    }
+
+
+
+
+@media screen and (width <= 800px) {
+    #container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr 400px 170px;
+      padding: 2px;
+      
+    }
+    #banner {
+        grid-column: 1 / 3;
+        font-size: 1em;
+        
+    }
+    #sidebar {
+
+        justify-content: space-around;
+        font-size: 20px;
+        width: 170px;
+        height: 400px;
+        grid-row: 2 / 3;
+
+    }
+    
+    #main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background: no-repeat url("index-bg/bg_responsive_v4.gif");
+        background-position: bottom;
+        background-size: 100%;   
+    }
+
+    .blog-text {
+        font-size: 4vw;
+        padding: 30px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        display: grid;
+    }
+  }
+
+  @media screen and (width <= 450px) {
+    #container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr 400px 160px;
+      padding: 2px;
+      
+    }
+    #banner {
+        grid-column: 1 / 3;
+        font-size: 1em;
+        
+    }
+    #sidebar {
+
+        justify-content: space-around;
+        font-size: 20px;
+        width: 170px;
+        height: 400px;
+        grid-row: 2 / 3;
+
+    }
+    
+    #main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background: no-repeat url("index-bg/bg_responsive_v4.gif");
+        background-position: bottom;
+        background-size: 155%;   
+    }
+
+    #news {
+        align-content: center;
+    }
+
+    #blog-container {
+        padding: 20px;
+        grid-template-columns: 300px;
+        grid-template-rows: 1fr 50px;
+    }
+
+    .blog-picture {
+        justify-self: center;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .blog-element {
+        
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        text-align: center;
+    }
+
+    .cover{
+        width: 50%;
+    }
+  }
+
+  /*@media screen and (width >= 1599px) {
+   #container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 10fr;
+    background-color: #437FCC;
+    gap: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+    #banner {
+        grid-column: 1 / 3;
+        font-size: 1em;
+        
+    }
+    #sidebar {
+
+        justify-content: space-around;
+        font-size: 20px;
+        width: 170px;
+        height: 800px;
+        grid-row: 2 / 3;
+
+    }
+    
+    #main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background: no-repeat url("background_v2.gif");
+        background-position: bottom;
+        background-size: 100%;
+    }
+  }
+
+  /*@media screen and (width <= 900px) {
+    #container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr 400px;
+      padding: 2px;
+      
+    }
+    #banner {
+        grid-column: 1 / 3;
+        font-size: 1em;
+        
+    }
+    #sidebar {
+
+        justify-content: space-around;
+        font-size: 20px;
+        width: 170px;
+        height: 400px;
+        grid-row: 2 / 3;
+
+    }
+    
+    #main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background: no-repeat url("bg_responsive_v3.gif");
+        background-position: 20%;
+        background-size: 200%;
+    }
+  }
+
+  /*@media screen and (width >= 1599px) {
+   #container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 10fr;
+    background-color: #437FCC;
+    gap: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+    #banner {
+        grid-column: 1 / 3;
+        font-size: 1em;
+        
+    }
+    #sidebar {
+
+        justify-content: space-around;
+        font-size: 20px;
+        width: 170px;
+        height: 800px;
+        grid-row: 2 / 3;
+
+    }
+    
+    #main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background: no-repeat url("background_v2.gif");
+        background-position: bottom;
+        background-size: 100%;
+    }
+  }
+
+  /*@media screen and (width <= 900px) {
+    #container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr 400px;
+      padding: 2px;
+      
+    }
+    #banner {
+        grid-column: 1 / 3;
+        font-size: 1em;
+        
+    }
+    #sidebar {
+
+        justify-content: space-around;
+        font-size: 20px;
+        width: 170px;
+        height: 400px;
+        grid-row: 2 / 3;
+
+    }
+    
+    #main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background: no-repeat url("bg_responsive_v3.gif");
+        background-position: 20%;
+        background-size: 200%;
+    }
+  }
+
+  
