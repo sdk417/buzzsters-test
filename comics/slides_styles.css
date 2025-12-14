@@ -20,6 +20,7 @@ img {
 .mySlides {
   display: none;
   border: solid 2px #000000;
+  box-shadow: 2px 2px 20px 5px rgba(0, 30, 91, 0.927);
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -94,5 +95,77 @@ img {
 
 .active,
 .demo:hover {
+  opacity: 1;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #2f6dd7;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 17px;
+  left: 40%;
+  width: 280px;
+  border-radius: 20px;
+}
+
+/* The popup form - hidden by default */
+.form-background {
+  display: none;
+  position: fixed;
+
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+  background-color: rgba(0,0,0,.5);
+
+}
+
+.form-popup {
+  position: fixed;
+  right: 40%;
+  bottom: 40%;
+  z-index: 0;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  text-align: center;
+  max-width: 400px;
+  padding: 50px;
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid #2f6dd7;
+  
+  
+}
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(0, 47, 233);
+  border-radius: 20px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }

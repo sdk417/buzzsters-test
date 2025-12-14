@@ -14,13 +14,29 @@
     <body style="background-color: #437FCC;">
         <div class="reading-progressbar" max="100" value="0">
         </div>
+        <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()"><h2>Guía de controles</h2></button>
+
+<!-- The form -->
+<div class="form-background" id="myForm">
+  <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <!--<p>En PC, puedes pulsar espacio para reproducir o pausar la música.</p><br>
+    <p>Puedes pulsar las flechas para avanzar o retroceder de página.<br> <br>Alternatívamente, puedes pulsar sobre la imagen para avanzar a la siguiente página.</p><br><br>-->
+    <h1>Control de música</h1>
+    Para <b>reproducir o pausar</b> la canción, puedes pulsar la <b>tecla 'Espacio'</b> o usar los controles del reproductor de audio.
+    <hr style="width: 100%; border: solid 2px #437FCC;">
+    <h1>Control de páginas</h1>
+    Para <b>avanzar o retroceder de página</b>, puedes utilizar tanto las <b>teclas de izquierda y derecha</b> de tu teclado, <br>como los botones físicos que encontrarás más abajo.<br><br>
+    Alternatívamente,<br> <b>puedes pulsar sobre la imagen</b> para avanzar a la siguiente página.<br><br>
+    <button type="button" class="btn cancel" onclick="closeForm()"><h2>Cerrar</h2></button>
+  </form>
+</div>
+</div>
         <div class="blog-text">
             <article>
                     <div class="container">
                       <audio id="miAudioPlayer" controls src="https://github.com/sdk417/buzzsters-test/blob/main/comics/invierno/audio/Love_Virus.mp3?raw=true" style="width:100%" loop></audio>
-                      <video width="100%" height="50px" controls="" autoplay="" name="media">
-                        <source src="https://github.com/sdk417/buzzsters-test/blob/main/comics/invierno/audio/Love_Virus.mp3?raw=true" type="audio/mp3">
-                    </video>
                       <div class="mySlides">
                         <img src="images/01-web.jpg" style="width:100%">
                         <div class="caption-container">01 / 40</div>
