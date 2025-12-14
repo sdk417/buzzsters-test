@@ -30,6 +30,27 @@ body {
     display: grid;
 }
 
+#comic-index {
+    width: 800px;
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: grid;
+    
+}
+
+@media screen and (width <= 1400px) {
+    #comic-index{
+    width: 350px;
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: grid;
+    }
+}
+
 #blog-index {
     
     font-family: "Roboto Flex", sans-serif;
@@ -40,6 +61,13 @@ body {
 }
 
 .blog-picture {
+    border: solid 2px  #437FCC;
+    grid-column: 1 / 2;
+    border-radius: 5px;
+}
+
+
+.comic-cover {
     border: solid 2px  #437FCC;
     grid-column: 1 / 2;
     border-radius: 5px;
@@ -70,6 +98,12 @@ h1 {
 }
 
 h2 {
+    margin: 0px;
+}
+
+h3 {
+    font-family: "Roboto Flex", sans-serif;
+    color:#4094FF;
     margin: 0px;
 }
 
